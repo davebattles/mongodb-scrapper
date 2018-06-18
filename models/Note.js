@@ -8,7 +8,7 @@
                                     
 var mongoose = require("mongoose");
 
-var Scheme = mongoose.Schema;
+var Schema = mongoose.Schema;
 
 var noteSchema = new Schema({
   _headlineId: {

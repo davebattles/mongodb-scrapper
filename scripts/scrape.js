@@ -6,7 +6,7 @@
 // ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝
                                                 
 var request = require("request");
-var cheerio = require(cheerio);
+var cheerio = require("cheerio");
 
 var scrape = function (cb) {
   request("http://www.nytimes.com", function(err, res, body){
