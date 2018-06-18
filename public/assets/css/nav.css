@@ -1,0 +1,90 @@
+#navLogo {
+    position: absolute;
+    left: 50%;
+    height: 40px;
+    margin-left: -75px;
+    filter: invert(20%);
+    top: -1px;
+    filter: invert(100%);
+    /* filter: drop-shadow(2px 2px 1px #000); */
+  }
+.navbar {
+  position: relative;
+  z-index: 3;
+  width: 100vw;
+  height: 35px;
+  background-color: rgba(109, 82, 67, 0.829);
+ background-image: url(../images/h1background.png);
+ background-size: auto;
+ background-blend-mode: overlay;
+ filter: brightness(30%);
+ filter: blur(.5px);
+ filter: drop-shadow(10px 10px 30px #000000b9);
+}
+#homeIcon, #userIcon, #eventIcon, #exitIcon {
+/* padding: 10px 5px 5px; */
+margin: 0px;
+height: 30px;
+width: 30px;
+filter: contrast(100%);
+/* background: #0000001e; */
+/* testing animations */
+
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+
+}
+
+#homeIcon:hover, #userIcon:hover, #eventIcon:hover, #exitIcon:hover {
+ filter: invert(50%);
+ /* width: 300px; */
+    
+}
+
+
+ .homeIconAni {
+   padding: 2px 0px 5px 0px;
+  height: 30px;
+  width: 30px;
+  -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+transition: width 1s;
+position: relative;
+float: left;
+color: #2c2c2c;
+
+}
+#homeText, #userText, #eventsText, #logoutText {
+ position: relative;
+ line-height: 20px;
+ top: -4px;
+ z-index: 1;
+ font-size: 13px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+
+}
+
+.homeIconAni:hover, .icon2, .icon3, .icon4 {
+  width: 100px;
+}
+/* 
+.homeIconAni:hover {
+  height: 30px;
+  width: 200px;
+  filter: invert(50%);
+  }  */
+
+header {
+  width: 100%;
+  height: 35px !important;
+}
