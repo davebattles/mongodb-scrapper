@@ -4,12 +4,13 @@
 // ╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗
 // ███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║
 // ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
-                                                 
+             
 
 var express = require("express");
 var mongoose = require("mongoose");
-var expressHandlebars = require("express-handlebars");
+var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
+var path = require('path');
 var PORT = process.env.PORT || 3000;
 var app = express();
 var router = express.Router();
@@ -18,7 +19,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.engine('handlebars', expressHandlebars({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.use(router);
