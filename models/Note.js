@@ -12,7 +12,7 @@ var Schema = mongoose.Schema;
 
 var noteSchema = new Schema({
   _headlineId: {
-    type: Schema.types.ObjectId
+    type: Schema.Types.ObjectId
   },
   date: String,
   noteText: String
